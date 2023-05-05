@@ -29,10 +29,21 @@ urlList = [
 Then run the script using the following command:
 
 ```
-python youtube_to_mp3.py
+python dl.py
 ```
 
 The script will download the videos and convert them to MP3 audio files. The MP3 files will be saved in the same directory as the script.
+
+
+## cleanup.py
+
+I created a second Python script, `cleanup.py`, that cleans up the file names of the MP3 files downloaded by the `dl.py` script.
+
+The script removes certain strings and characters from the MP3 file names, such as parentheses and brackets. It also removes extra spaces and specific words like "Music Video" from the file names. Finally, it removes any quotes or other special characters that could cause issues with file names.
+
+To use the `cleanup.py` script, simply run it in the same directory as the MP3 files downloaded by `mp3.py`. The script will automatically rename all of the MP3 files in the directory based on the cleanup rules.
+
+
 
 ## Copyright Issues
 
